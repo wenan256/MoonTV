@@ -58,9 +58,10 @@ jobs:
       - name: Show version statistics
         run: |
           echo "📊 版本更新完成:"
-          echo "当前版本: ${{ github.ref_name }}"
+          echo "目前版本: ${{ github.ref_name }}"
           echo "VERSION.txt 内容:"
           cat VERSION.txt
           echo ""
           echo "version.ts 中的 CURRENT_VERSION:"
           grep "CURRENT_VERSION" src/lib/version.ts
+
